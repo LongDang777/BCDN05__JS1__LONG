@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tính tổng 2 ký số -->
+
+    <!-- Mô hình khối -->
+
+    <!-- khối 1: input
+    num ( sô nguyên dương có hai chữ số)
+    
+    khối 2:
+    b1: tạo biến và gán giá trị
+    ten ( hàng chục)
+    unit (hàng đơn vị)
+
+    b2: lấy hàng chục
+    lấy phần nguyên trong phép chia num/10
+    ten = Math.floor(num/10)
+    
+    lấy phần dư hàng đơn vị 
+    unit = num%10
+
+    khối 3: Output
+    Tổng 2 chữ số của num
+
+    vd 79 => 7 + 9 = 16 -->
+
+
+    <script>
+        //  b1: khái báo 
+        var num = 79;
+
+        // b2:
+        var ten = Math.floor(num/10); //7
+        var unit = num%10; //9
+
+        // b3
+        var tong = ten + unit;
+        console.log('Tổng 2 chữ số là: ' + tong);
+        
+    </script>
+    
+</body>
+</html>

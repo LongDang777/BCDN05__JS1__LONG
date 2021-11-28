@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Quy Đổi Tiền -->
+
+    <!-- Mô Hình 3 khối -->
+
+    <!-- 
+    khối 1: input
+    giá usd  1usd = 23.500
+    sô tiền dollar cần đổi
+        
+    khốii 2:
+    b1: tạo biến và gán giá trị 
+    b2: tính số tiền quy đổi.
+
+    khối 3 :
+    số tiền sau khi quy đổi X(usd) sang vnd. 
+    -->
+    
+    <script>
+        // B1
+        var oneDollar = 23.500;
+        var soTienDo  = 5;
+
+        // b2
+        var tienViet = soTienDo * oneDollar;
+
+        // b3
+        console.log('Số tiền Dollar quy đổi ra tiền việt là '+ tienViet + ' ngàn đồng' );
+        console.log(new Intl.NumberFormat('vn-VN', { maximumSignificantDigits: 3 }).format(tienViet));
+        
+    </script>
+</body>
+</html>
