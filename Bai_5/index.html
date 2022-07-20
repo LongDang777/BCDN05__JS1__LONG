@@ -34,16 +34,23 @@
 
     <script>
         //  b1: khái báo 
-        var num = 79;
+        // var num = 79;
 
         // b2:
-        var ten = Math.floor(num/10); //7
-        var unit = num%10; //9
+        // var ten = Math.floor(num/10); //7
+        // var unit = num%10; //9
 
         // b3
-        var tong = ten + unit;
-        console.log('Tổng 2 chữ số là: ' + tong);
+        // console.log('Tổng 2 chữ số là: ' + tong);
         
+        var number = prompt(`Tính tổng hai ký số. Nhập vào số có hai chữ số`)
+        number = parseInt(number);
+        var tens = Math.floor(number/10)
+        var units= number%10;
+        var total = tens + units;
+
+        document.write(`Số ${number} có tổng hai kí số là: ${total} `)
+
     </script>
     
 </body>

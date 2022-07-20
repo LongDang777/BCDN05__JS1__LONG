@@ -23,18 +23,34 @@
     khối 3 :
     số tiền sau khi quy đổi X(usd) sang vnd. 
     -->
-    
+    <div style="display: center;">
+        
+    </div>
     <script>
         // B1
-        var oneDollar = 23.500;
-        var soTienDo  = 5;
+        // var oneDollar = 23.500;
+        // var soTienDo  = 5;
 
         // b2
-        var tienViet = soTienDo * oneDollar;
+        // var tienViet = soTienDo * oneDollar;
 
         // b3
-        console.log('Số tiền Dollar quy đổi ra tiền việt là '+ tienViet + ' ngàn đồng' );
-        console.log(new Intl.NumberFormat('vn-VN', { maximumSignificantDigits: 3 }).format(tienViet));
+        // console.log('Số tiền Dollar quy đổi ra tiền việt là '+ tienViet + ' ngàn đồng' );
+        // console.log('Số tiền làm tròn' ,new Intl.NumberFormat('vn-VN', { maximumSignificantDigits: 3 }).format(tienViet),' VND');
+
+        var oneDollar = prompt('Nhập vào tỷ giá Dollar so với tiền việt');
+        var Dollar   = prompt('Nhập vào số Dollar cần đổi');
+
+        oneDollar = parseInt(oneDollar);
+        Dollar = parseInt(Dollar);
+        var tienViet = oneDollar * Dollar;
+
+        const formatNumber = new Intl.NumberFormat('vn-VN',{maximumSignificantDigits: 3})
+
+        document.write(`<h2 style="text-align: center;margin-top: 150px;"> 1 usd = ${formatNumber.format(oneDollar)} vnd </h2> </br> `); 
+        document.write(`<h2 style="text-align: center;"> ${formatNumber.format(Dollar)} usd = ${formatNumber.format(tienViet)} vnd </h2>`)
+
+
         
     </script>
 </body>
